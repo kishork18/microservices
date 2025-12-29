@@ -30,7 +30,26 @@ This system applies a microservices architecture with the following principles:
 - Services discover one another using a Service Registry
 - API Gateway routes and protects entry points
 
-*(Add a diagram here if available — this helps communicate structure visually.)*
+## 🧠 Architecture
+
+```mermaid
+flowchart TD
+    Client[Client / Frontend] -->|HTTP Requests| APIGateway[API Gateway]
+
+    APIGateway --> UserService[User Service]
+    APIGateway --> HotelService[Hotel Service]
+    APIGateway --> RatingService[Rating Service]
+
+    UserService --> ServiceRegistry[Service Registry]
+    HotelService --> ServiceRegistry
+    RatingService --> ServiceRegistry
+    APIGateway --> ServiceRegistry
+
+    ConfigServer[Config Server] --> UserService
+    ConfigServer --> HotelService
+    ConfigServer --> RatingService
+    ConfigServer --> APIGateway
+
 
 ---
 
