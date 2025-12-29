@@ -1,23 +1,30 @@
 # Microservices Project
 
-This repository contains a **microservices-based system** implemented in Java (Spring ecosystem).  
-Each module represents an independent service with a specific responsibility, designed to be developed, deployed, and scaled independently.
+This repository contains a **microservices-based backend system** built using **Java and Spring Boot / Spring Cloud**.  
+Each service is independently deployable and communicates via REST, using service discovery and centralized configuration.
 
 ---
 
 ## 🚀 Overview
 
-This project demonstrates a **basic microservices architecture** with:
+This project demonstrates a **standard microservices architecture** using:
+- API Gateway
+- Service Registry (Discovery Server)
+- Centralized Configuration
+- Multiple domain services
 
-### 📌 Microservices Included
-| Service                     | Purpose |
-|----------------------------|---------|
-| **ServiceRegistory**       | Service registry (Eureka / discovery server) — keeps track of all services |
-| **Config-Server**          | Centralized configuration management |
-| **ApiGateWay**             | API Gateway routing requests to underlying services |
-| **UserService**            | Manages user-related data and logic |
-| **HotelService**           | Handles hotel data and business logic |
-| **RatingService**          | Provides ratings data, potentially for hotels/users |
+---
+
+## 📌 Microservices Included
+
+| Service Name        | Responsibility |
+|---------------------|----------------|
+| **ServiceRegistory** | Service discovery and registration |
+| **Config-Server**   | Centralized configuration management |
+| **ApiGateWay**      | Single entry point for all client requests |
+| **UserService**     | User-related operations |
+| **HotelService**    | Hotel management |
+| **RatingService**   | Ratings management |
 
 ---
 
@@ -25,23 +32,22 @@ This project demonstrates a **basic microservices architecture** with:
 
 ```mermaid
 flowchart TD
-    Client[Client / Frontend] -->|HTTP Requests| APIGateway[API Gateway]
+    Client --> APIGateway
 
-    APIGateway --> UserService[User Service]
-    APIGateway --> HotelService[Hotel Service]
-    APIGateway --> RatingService[Rating Service]
+    APIGateway --> UserService
+    APIGateway --> HotelService
+    APIGateway --> RatingService
 
-    UserService --> ServiceRegistry[Service Registry]
+    UserService --> ServiceRegistry
     HotelService --> ServiceRegistry
     RatingService --> ServiceRegistry
     APIGateway --> ServiceRegistry
 
-    ConfigServer[Config Server] --> UserService
+    ConfigServer --> UserService
     ConfigServer --> HotelService
     ConfigServer --> RatingService
     ConfigServer --> APIGateway
-
-
+```
 ## 🛠️ Prerequisites
 
 Before you start, make sure you have:
