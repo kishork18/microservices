@@ -23,15 +23,6 @@ This project demonstrates a **basic microservices architecture** with:
 
 ## 🧠 Architecture
 
-This system applies a microservices architecture with the following principles:
-
-- Each service runs independently
-- Configuration is centralized via the Config Server
-- Services discover one another using a Service Registry
-- API Gateway routes and protects entry points
-
-## 🧠 Architecture
-
 ```mermaid
 flowchart TD
     Client[Client / Frontend] -->|HTTP Requests| APIGateway[API Gateway]
@@ -50,8 +41,6 @@ flowchart TD
     ConfigServer --> RatingService
     ConfigServer --> APIGateway
 
-
----
 
 ## 🛠️ Prerequisites
 
