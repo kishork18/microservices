@@ -1,94 +1,53 @@
-# microservices
-Contain all code related Microservices 
-# Project Title
+# Microservices Project
 
-A brief description of what this project does and who it's for.
+This repository contains a **microservices-based system** implemented in Java (Spring ecosystem).  
+Each module represents an independent service with a specific responsibility, designed to be developed, deployed, and scaled independently.
 
-## Architecture
+---
 
-This project follows a microservices architecture. Below is a brief overview of the services:
+## 🚀 Overview
 
--   **Service Name 1:** Brief description of what this service is responsible for.
--   **Service Name 2:** Brief description of what this service is responsible for.
--   **Service Name 3:** Brief description of what this service is responsible for.
--   ... (add all your services)
+This project demonstrates a **basic microservices architecture** with:
 
-(Optional: You can add an architecture diagram here.)
+### 📌 Microservices Included
+| Service                     | Purpose |
+|----------------------------|---------|
+| **ServiceRegistory**       | Service registry (Eureka / discovery server) — keeps track of all services |
+| **Config-Server**          | Centralized configuration management |
+| **ApiGateWay**             | API Gateway routing requests to underlying services |
+| **UserService**            | Manages user-related data and logic |
+| **HotelService**           | Handles hotel data and business logic |
+| **RatingService**          | Provides ratings data, potentially for hotels/users |
 
-## Getting Started
+---
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## 🧠 Architecture
 
-### Prerequisites
+This system applies a microservices architecture with the following principles:
 
-What things you need to install the software and how to install them.
+- Each service runs independently
+- Configuration is centralized via the Config Server
+- Services discover one another using a Service Registry
+- API Gateway routes and protects entry points
 
-```
-Give examples
-```
+*(Add a diagram here if available — this helps communicate structure visually.)*
 
-### Installing
+---
 
-A step-by-step series of examples that tell you how to get a development environment running.
+## 🛠️ Prerequisites
 
-Say what the step will be
+Before you start, make sure you have:
 
-```
-Give the example
-```
+- **Java 17+**
+- **Maven 3.6+**
+- **Docker & Docker Compose** (optional, but highly recommended)
+- Environment variables configured for each service if needed
 
-And repeat for every step
+---
 
-```
-until finished
-```
+## 📦 Setup & Running Locally
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Running the tests
-
-Explain how to run the automated tests for this system.
-
-### Break down into end-to-end tests
-
-Explain what these tests test and why.
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why.
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system.
-
-## Built With
-
-*   [Framework Name] - The web framework used
-*   [Dependency Management] - Dependency Management
-*   [Database] - Database used
-*   ...
-
-## Authors
-
-*   **Your Name** - *Initial work* - [Your Github](https://github.com/your-username)
-
-See also the list of [contributors](https://github.com/your-username/your-project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-*   Hat tip to anyone whose code was used
-*   Inspiration
-*   ...
-
+### 1. Clone the repository
+```sh
+git clone https://github.com/kishork18/microservices.git
+cd microservices
