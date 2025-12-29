@@ -1,0 +1,8 @@
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/HotelServiceApplication.java
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/controllers/HotelController.java
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/dto/Response.java
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/entities/Hotel.java
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/exceptions/GlobalExceptionHandler.java
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/repositories/HotelRepository.java
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/services/HotelService.java
+/Users/lawcubator/Documents/microservices/HotelService/src/main/java/com/hotel/services/impl/HotelServiceImpl.java

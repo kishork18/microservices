@@ -1,0 +1,7 @@
+/Users/lawcubator/Documents/microservices/RatingService/src/main/java/com/rating/RatingServiceApplication.java
+/Users/lawcubator/Documents/microservices/RatingService/src/main/java/com/rating/controllers/RatingController.java
+/Users/lawcubator/Documents/microservices/RatingService/src/main/java/com/rating/entities/Rating.java
+/Users/lawcubator/Documents/microservices/RatingService/src/main/java/com/rating/exceptions/GlobalExceptionHandler.java
+/Users/lawcubator/Documents/microservices/RatingService/src/main/java/com/rating/repositories/RatingRepository.java
+/Users/lawcubator/Documents/microservices/RatingService/src/main/java/com/rating/services/RatingService.java
+/Users/lawcubator/Documents/microservices/RatingService/src/main/java/com/rating/services/impl/RatingServiceImpl.java
